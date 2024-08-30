@@ -1,5 +1,13 @@
+import "./styling.css";
 function ClickedButton() {
-  return;
+  function handleClick() {
+    alert("Pin rermoved!");
+  }
+  return(
+    <button id="clickedButton" className="clickedButton" onClick={handleClick}>
+      Saved
+    </button>
+  );
 }
 
 export default ClickedButton;
