@@ -9,6 +9,7 @@ function App() {
   return (
     <>
       <div className="App">
+        
         <RecipeDisplay />
         <div className="recipePhotoBlock">
           <BoardAssignment />

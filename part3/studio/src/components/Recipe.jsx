@@ -1,9 +1,10 @@
 import { useState } from 'react';
+import '../App.css';
 
 const RecipeAuthor = () => {
-   let authorLink = "";
-   let authorPhoto = "";
-   let authorName = "";
+   let authorLink = "https://natashaskitchen.com/jalapeno-poppers-with-bacon/";
+   let authorPhoto = "https://natashaskitchen.com/wp-content/uploads/2023/02/NK-Head-Red-Shirt-small.png";
+   let authorName = "Natasha";
 
    return (
       <div>
@@ -17,7 +18,7 @@ const RecipeAuthor = () => {
 }
 
 const RecipeIngredients = () => {
-   const ingredients = [];
+   const ingredients = ["Jalapaeneos","Bacon","Cream Cheese","Garlic","Salt and Pepper"];
    return(
       <div>
          <h3>Recipe Ingredients</h3>
@@ -36,8 +37,8 @@ const RecipeDescription = () => {
    return (
       <div> 
          <div>
-            <h1></h1>
-            <p></p>
+            <h1>Jalapeno Poppers with Bacon</h1>
+            <p>Jalapeno Poppers are the ultimate appetizer. Whether they are for a party buffet or game time snacks, you will love these jalapenos, sliced in half and stuffed with a rich mixture of cream cheese and crispy bacon and baked to cheesy golden brown perfection.</p>
          </div>
          <div className="recipePhotoBlock">
             <RecipeIngredients />
@@ -49,13 +50,14 @@ const RecipeDescription = () => {
 
 const RecipePhoto = () => {
    return (
-      <img src="" alt="" className="imageUpdates"/>
+      <img src="https://natashaskitchen.com/wp-content/uploads/2021/01/Jalapeno-Poppers-1.jpg" alt="Jalapeno poppers" className="imageUpdates"/>
    );
 }
 
 export default function RecipeDisplay () {
    return(
       <div className="recipePhotoBlock">
+         
          <RecipePhoto />
          <div>
             <RecipeDescription />
